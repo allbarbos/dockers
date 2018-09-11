@@ -7,3 +7,5 @@ services:
     volumes:
       - ./src:/falcon-dev
     container_name: falcon
+    ports:
+      - "8000:8000"
