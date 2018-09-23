@@ -1,0 +1,6 @@
+beautifulsoup4
+requests
+libxml2-dev
+libxslt-dev
+python-dev
+lxml
