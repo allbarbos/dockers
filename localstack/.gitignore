@@ -1,0 +1,6 @@
+### Localstack ###
+.localstack
+
+### Serverless ###
+# Ignore build directory
+.serverless

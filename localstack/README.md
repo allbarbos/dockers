@@ -22,7 +22,7 @@ output
 Zipar index.js
 
 ```
-zip ./lambda/function.zip ./lambda/index.js
+zip -j ./lambda/function.zip ./lambda/index.js
 ```
 
 Criar lambda
@@ -36,4 +36,13 @@ lambda create-function \
 --handler index.handler \
 --zip-file fileb://lambda/function.zip
 
+```
+
+Invoke
+
+```
+aws --endpoint-url=http://localhost:4574 \
+lambda invoke \
+--function-name helloworld \
+--payload '{"key1":"value1", "key2":"value2", "key3":"value3"}'
 ```
